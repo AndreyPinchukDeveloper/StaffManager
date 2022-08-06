@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace StaffManager
+namespace StaffManager.Views.OperationResultControls
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MessageView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MessageView : UserControl
     {
-        public MainWindow()
+        public MessageView()
         {
             InitializeComponent();
         }
