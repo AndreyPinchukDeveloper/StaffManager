@@ -12,7 +12,7 @@ namespace BusinessStaffManager.Models.Data
         {
             Database.EnsureCreated();//ensure to create database if it's not exist
         }
-        protected override void OnConfiguration(DbContextOptionsBuilder optionsBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database = BusinessStaffManagerDB;Trusted_connection=true;");
         }

@@ -90,9 +90,6 @@
     <Compile Include="Views\MakeControls\MakeDepartmentView.xaml.cs">
       <DependentUpon>MakeDepartmentView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\MakeControls\MakePositionView.xaml.cs">
-      <DependentUpon>MakePositionView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\MakeControls\MakeUserView.xaml.cs">
       <DependentUpon>MakeUserView.xaml</DependentUpon>
     </Compile>
@@ -150,10 +147,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\MakeControls\MakeDepartmentView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\MakeControls\MakePositionView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
