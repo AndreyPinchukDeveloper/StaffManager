@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessStaffManager", "BusinessStaffManager\BusinessStaffManager.csproj", "{B5488E4A-33C0-4FAC-854B-ED6AC70FD821}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessStaffManger", "BusinessStaffManager\BusinessStaffManger.csproj", "{B5488E4A-33C0-4FAC-854B-ED6AC70FD821}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserControlsLibrary", "UserControlsLibrary\UserControlsLibrary.csproj", "{95182E9F-F6B1-40A3-B65C-61557A433FE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandsLibrary", "CommandsLibrary\CommandsLibrary.csproj", "{1A36BAA4-22A8-4A5C-AC01-79C8963920E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandsLibrary", "CommandsLibrary\CommandsLibrary.csproj", "{1A36BAA4-22A8-4A5C-AC01-79C8963920E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

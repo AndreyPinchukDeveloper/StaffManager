@@ -11,8 +11,6 @@ namespace BusinessStaffManager.Models.Data
         public delegate void EventDelegate();
         public event EventDelegate myEvent = null;
 
-        public virtual 
-
         public static string CreateDepartment(string name)
         {
             string result = "Already exist.";

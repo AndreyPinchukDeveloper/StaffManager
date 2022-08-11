@@ -12,7 +12,7 @@ namespace BusinessStaffManager.Models
         public string Name { get; set; }
         public decimal Salary { get; set; }
         public int MaxNumber { get; set; }
-        public List<Staff> staff { get; set; }
-        public List<Department> department { get; set; }
+        public List<Staff> Staff { get; set; }
+        public List<Department> Department { get; set; }
     }
 }

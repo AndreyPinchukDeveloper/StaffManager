@@ -17,12 +17,12 @@ namespace CommandsLibrary.Commands.Base
         public bool IsExecuting 
         { 
             get { return _isExecuting; }
-            set { _isExecuting = value; OnCanExecuteChanged(); }
+            //set { _isExecuting = value; OnCanExecuteChanged(); }
         }
 
         public override bool CanExecute(object? parameter)
         {
-            return !IsExecuting
+            return !IsExecuting;
         }
 
         public override void Execute(object? parameter)
