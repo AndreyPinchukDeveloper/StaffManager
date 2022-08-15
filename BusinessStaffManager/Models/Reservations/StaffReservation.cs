@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessStaffManager.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,18 @@ namespace BusinessStaffManger.Models.Reservations
     /// </summary>
     public class StaffReservation
     {
-
+        public int ReservationID { get;}
+        public string Name { get;}
+        public string SurName { get;}
+        public int Phone { get; }
+        public virtual PositionReservation Position { get;}
+        public StaffReservation(int id, string name, string surName, int phone, PositionReservation position)
+        {
+            ReservationID = id;
+            Name = name;
+            SurName = surName;
+            Phone = phone;
+            Position = position;
+        }
     }
 }

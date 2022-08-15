@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using BusinessStaffManger.Models.Reservations;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessStaffManager.Models.Data
 {
@@ -11,7 +8,7 @@ namespace BusinessStaffManager.Models.Data
         public delegate void EventDelegate();
         public event EventDelegate myEvent = null;
 
-        public static string CreateDepartment(string name)
+        /*public static string CreateDepartment(string name)
         {
             string result = "Already exist.";
 
@@ -21,13 +18,13 @@ namespace BusinessStaffManager.Models.Data
                 bool isExist = db.Departments.Any(element => element.Name == name);
                 if (!isExist)
                 {
-                    Department newDepartment = new Department { Name = name };
+                    DepartmentReservation newDepartment = new DepartmentReservation { Name = name };
                     db.Departments.Add(newDepartment);
                     db.SaveChanges();
                     result = "Done !";
                 }
                 return result;
             }
-        }
+        }*/
     }
 }

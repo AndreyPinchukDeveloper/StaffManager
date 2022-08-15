@@ -1,5 +1,6 @@
 ﻿using BusinessStaffManager.Models;
 using BusinessStaffManager.ViewModels.Base;
+using BusinessStaffManger.Models.Reservations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +11,11 @@ namespace BusinessStaffManger.ViewModels
 {
     public class DepartmentViewModel:ViewModelBase
     {
-        private readonly Department _department;
-        public string DepartmentID => _department.Id.ToString();
+        private readonly DepartmentReservation _department;
+        public string DepartmentID => _department.ReservationID.ToString();
         public string Name => _department.Name;
         public string? Position => _department.Position.ToString();
-        public DepartmentViewModel(Department department)
+        public DepartmentViewModel(DepartmentReservation department)
         {
             _department = department;
         }

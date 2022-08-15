@@ -1,12 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using BusinessStaffManger.Models.Reservations;
+using Microsoft.EntityFrameworkCore;
 
 namespace BusinessStaffManager.Models.Data
 {
     public class ApplicationContext:DbContext
     {
-        public DbSet<Staff> Staffs { get; set; }
-        public DbSet<Position> Positions { get; set; }
-        public DbSet<Department> Departments { get; set; }
+        public DbSet<StaffReservation> Staffs { get; set; }
+        public DbSet<PositionReservation> Positions { get; set; }
+        public DbSet<DepartmentReservation> Departments { get; set; }
 
         public ApplicationContext()
         {
