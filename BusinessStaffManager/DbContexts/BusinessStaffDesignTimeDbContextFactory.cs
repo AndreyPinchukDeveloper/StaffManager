@@ -3,6 +3,10 @@ using Microsoft.EntityFrameworkCore.Design;
 
 namespace BusinessStaffManger.DbContexts
 {
+    /// <summary>
+    /// We need class to implement IDesignTimeDbContextFactory<T> - t is our context
+    /// to create a Migrations
+    /// </summary>
     public class BusinessStaffDesignTimeDbContextFactory : IDesignTimeDbContextFactory<BusinessStaffDbContext>
     {
         public BusinessStaffDbContext CreateDbContext(string[] args)

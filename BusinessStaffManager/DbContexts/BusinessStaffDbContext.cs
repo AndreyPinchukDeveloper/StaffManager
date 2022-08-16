@@ -5,6 +5,7 @@ namespace BusinessStaffManger.DbContexts
 {
     public class BusinessStaffDbContext:DbContext
     {
+        //DbSet - remote collection(not from memory) behold separate table to us 
         public DbSet<DepartmentDTO> Departments { get; set; }
         public DbSet<PositionDTO> Positions { get; set; }
         public DbSet<StaffDTO> Staffs { get; set; }
@@ -13,5 +14,8 @@ namespace BusinessStaffManger.DbContexts
         {
 
         }
+
+        //we can redefine the method OnConfiguring to define
+        //which db we want to bind with our context
     }
 }

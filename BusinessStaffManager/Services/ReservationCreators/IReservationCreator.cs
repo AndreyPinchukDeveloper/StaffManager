@@ -9,8 +9,8 @@ namespace BusinessStaffManger.Services.ReservationCreators
 {
     public interface IReservationCreator
     {
-        Task CreateReservation(DepartmentReservation departmentReservation);
-        Task CreateReservation(PositionReservation positionReservation);
-        Task CreateReservation(StaffReservation staffReservation);
+        Task CreateDepartmentReservation(DepartmentReservation departmentReservation);
+        Task CreatePositionReservation(PositionReservation positionReservation);
+        Task CreateStaffReservation(StaffReservation staffReservation);
     }
 }
