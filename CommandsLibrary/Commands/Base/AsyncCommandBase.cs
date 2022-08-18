@@ -14,10 +14,10 @@ namespace CommandsLibrary.Commands.Base
         
         private bool _isExecuting;
         
-        public bool IsExecuting 
+        private bool IsExecuting 
         { 
             get { return _isExecuting; }
-            //set { _isExecuting = value; OnCanExecuteChanged(); }
+            set { _isExecuting = value; OnCanExecuteChanged(); }
         }
 
         public override bool CanExecute(object? parameter)
@@ -25,9 +25,21 @@ namespace CommandsLibrary.Commands.Base
             return !IsExecuting;
         }
 
-        public override void Execute(object? parameter)
+        public override async void Execute(object? parameter)
         {
-            throw new NotImplementedException();
+            IsExecuting = true;
+
+            try
+            {
+                await ExecuteAsync(parameter);
+            }
+            finally
+            {
+
+                IsExecuting = false;
+            }
         }
+
+        public abstract Task ExecuteAsync(object? parameter);
     }
 }

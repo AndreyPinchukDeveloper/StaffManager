@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessStaffManger.Services.ReservationConflictValidators
+namespace BusinessStaffManger.ViewModels.DepartmentViewModels
 {
-    public class DbStaffReservationConflictValidator
+    public class MakeDepartmentReservationVM
     {
 
     }

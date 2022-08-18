@@ -1,9 +1,14 @@
 ﻿using BusinessStaffManager.ViewModels.Base;
 using BusinessStaffManger.Models.Reservations;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace BusinessStaffManger.ViewModels
+namespace BusinessStaffManger.ViewModels.PositionViewModels
 {
-    public class PositionViewModel:ViewModelBase
+    public class PositionViewModel : ViewModelBase
     {
         private readonly PositionReservation _position;
 

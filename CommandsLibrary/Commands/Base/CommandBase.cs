@@ -9,14 +9,16 @@ namespace CommandsLibrary.Commands.Base
 {
     public abstract class CommandBase : ICommand
     {
-        /// <summary>
+        public event EventHandler CanExecuteChanged;
+
+        /*/// <summary>
         /// This event manage add/remove subscription on events logic
         /// </summary>
         public event EventHandler? CanExecuteChanged
         {
             add => CommandManager.RequerySuggested += value;
             remove => CommandManager.RequerySuggested -= value;
-        }
+        }*/
 
         /// <summary>
         /// With this methodf we can switch our opportunity to use any command,
@@ -33,13 +35,12 @@ namespace CommandsLibrary.Commands.Base
         /// </summary>
         public abstract void Execute(object? parameter);
 
-        /*
         /// <summary>
         /// We use that method to use our event when user want to enter any changes or dataabout yourself
         /// </summary>
         protected void OnCanExecuteChanged()
         {
             CanExecuteChanged?.Invoke(this, new EventArgs());
-        }*/
+        }
     }
 }
