@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace StaffManager
+namespace UserControlsLibrary.MakeWindowControlsViews
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MakeUser.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MakeUser : UserControl
     {
-        public MainWindow()
+        public MakeUser()
         {
             InitializeComponent();
         }
